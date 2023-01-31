@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Paciente</title>
+    <link rel="stylesheet" href="../css/loginPaciente.css">
+</head>
+<body>
+
+    <div class="main-login">
+
+        <div class="right-login">
+
+            <img src="../img/loginPaciente.png" class="right-login-image" alt="Tela Inicial">
+
+        </div> 
+
+        <div class="left-login">
+
+            <div class="card-login">
+
+                <div class="voltar">
+                    <button onclick="voltar()" class='voltar-btn'>Voltar</button>
+                </div>
+
+                <h1>Entrar</h1>
+
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+
+                <div class="text-field">
+
+                    <label id="labelEmail" for="email">Email</label>
+                    <input type="text" id="email" placeholder="Email" required>
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="btn">
+
+                    <button onclick="entrar()" class="btn-login">Login</button>
+
+                    <h3>Ainda não atualizou seu cadastro?</h3>
+                    <a href="logarParaAtualizar.html"><button class="btn-cadastro">Atualizar cadastro</button></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/loginPaciente.js"></script>
+    
+</body>
+</html>
